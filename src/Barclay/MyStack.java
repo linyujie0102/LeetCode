@@ -64,4 +64,17 @@ public class MyStack<T> implements MyStackInterface<T> {
         T result = top.item;
         return result;
     }
+
+    public static void main(String[] args) {
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop());
+        }
+    }
 }
+
